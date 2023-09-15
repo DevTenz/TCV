@@ -3,19 +3,21 @@ import Home from "./pages/Home";
 import Html from "./pages/Html";
 import Footer from "./components/footer";
 import ScroolToTop from "./functions/Scrolltotop";
-import { HashRouter, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <div className="flex justify-center">
       <div className="max-w-screen-2xl w-screen">
-        <HashRouter>
+        <NavBar />
+        <Router>
           <ScroolToTop />
-          <NavBar />
-          <Route path="/" Component={Home} />
-          <Route path="/html" Component={Html} />
-          <Footer />
-        </HashRouter>
+          <Routes>
+            <Route path="/" element={<Home />}></Route>
+            <Route path="/html" element={<Html />}></Route>
+          </Routes>
+        </Router>
+        <Footer />
       </div>
     </div>
   );
