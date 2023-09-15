@@ -10,10 +10,9 @@ function App() {
     <div className="flex justify-center">
       <div className="max-w-screen-2xl w-screen">
         <NavBar />
-        <Router>
+        <Router basename="/">
           <ScroolToTop />
           <Routes>
-            <Route path="/" element={<Home />}></Route>
             <Route path="/html" element={<Html />}></Route>
           </Routes>
         </Router>
