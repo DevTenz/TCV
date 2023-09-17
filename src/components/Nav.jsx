@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Searchicon from "../assets/search.svg";
 
 export default function NavBar() {
@@ -20,7 +21,9 @@ export default function NavBar() {
   return (
     <nav className="px-4">
       <div className="w-100% border-b-2 h-16 flex justify-between px-3 items-center">
-        <p className="text-3xl font-extrabold ">TCV</p>
+        <Link to="/">
+          <p className="text-3xl font-extrabold ">TCV</p>
+        </Link>
         <input
           type="search"
           className="rounded-md outline-none p-1 hidden bg-slate-300/80"
