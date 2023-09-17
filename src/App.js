@@ -2,6 +2,7 @@ import NavBar from "./components/Nav";
 import Home from "./pages/Home";
 import Footer from "./components/footer";
 import ScrollToTop from "./functions/Scrolltotop";
+import Loadinggif from "./pages/loading";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import React, { Suspense, lazy } from "react";
 
@@ -11,7 +12,7 @@ function App() {
   return (
     <div className="flex justify-center">
       <div className="max-w-screen-2xl w-screen">
-        <Suspense fallback={<h1>Loading...</h1>}>
+        <Suspense fallback={<Loadinggif />}>
           <Router>
             <NavBar />
             <ScrollToTop />
