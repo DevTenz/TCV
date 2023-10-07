@@ -20,8 +20,8 @@ export default function Sidebar(props) {
           onClick={() => settoggle(!toggle)}
           className={
             toggle
-              ? "cursor-pointer font-extrabold text-xl"
-              : "cursor-pointer font-extrabold text-xl rotate-45"
+              ? "cursor-pointer font-extrabold text-xl rotate-45 md:rotate-0"
+              : "cursor-pointer font-extrabold text-xl md:rotate-45"
           }
         >
           +
