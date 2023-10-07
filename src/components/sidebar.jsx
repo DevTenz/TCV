@@ -18,9 +18,13 @@ export default function Sidebar(props) {
       <div>
         <p
           onClick={() => settoggle(!toggle)}
-          className="cursor-pointer font-extrabold text-xl"
+          className={
+            toggle
+              ? "cursor-pointer font-extrabold text-xl"
+              : "cursor-pointer font-extrabold text-xl rotate-45"
+          }
         >
-          &#8624;
+          +
         </p>
       </div>
     </aside>
