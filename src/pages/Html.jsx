@@ -259,7 +259,7 @@ export default function Html() {
         </details>
       </Sidebar>
 
-      <div className=" lg:text-xl py-4 px-24 overflow-scroll">
+      <div className=" lg:text-xl py-4 md:px-24 px-4 overflow-scroll">
         <p className="font-bold text-center p-1">
           <u>HTML CheatSheet</u>
         </p>

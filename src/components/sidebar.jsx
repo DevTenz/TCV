@@ -5,7 +5,11 @@ export default function Sidebar(props) {
 
   return (
     <aside className="sticky w-fit top-20 h-screen border-r-2 p-4 flex">
-      <div className={toggle ? " hidden" : "w-[15rem]"}>
+      <div
+        className={
+          !toggle ? " hidden md:w-[15rem] md:block" : "w-[15rem] md:hidden"
+        }
+      >
         <p className="font-semibold text-center text-lg">
           {props.title} Contents
         </p>
