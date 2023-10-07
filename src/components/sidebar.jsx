@@ -7,10 +7,10 @@ export default function Sidebar(props) {
     <aside className="sticky top-20 h-screen border-r-2 p-4 flex">
       <div
         className={
-          !toggle ? " hidden md:w-[15rem] md:block" : "w-[15rem] md:hidden"
+          !toggle ? " hidden md:w-[14rem] md:block" : "w-[10rem] md:hidden"
         }
       >
-        <p className="font-semibold text-center text-lg">
+        <p className="font-semibold text-center text-lg underline">
           {props.title} Contents
         </p>
         <div className="pb-20 h-[95%] overflow-scroll">{props.children}</div>
@@ -20,8 +20,8 @@ export default function Sidebar(props) {
           onClick={() => settoggle(!toggle)}
           className={
             toggle
-              ? "cursor-pointer font-extrabold text-xl rotate-45 md:rotate-0"
-              : "cursor-pointer font-extrabold text-xl md:rotate-45"
+              ? "cursor-pointer font-extrabold text-3xl rotate-45 md:rotate-0"
+              : "cursor-pointer font-extrabold text-3xl md:rotate-45 "
           }
         >
           +

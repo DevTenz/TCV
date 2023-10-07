@@ -259,7 +259,7 @@ export default function Html() {
         </details>
       </Sidebar>
 
-      <div className=" lg:text-xl py-4 md:px-20 px-4 overflow-scroll">
+      <div className=" lg:text-xl py-4 md:px-12 px-2 overflow-scroll">
         <p className="font-bold text-center p-1">
           <u>HTML CheatSheet</u>
         </p>
@@ -403,7 +403,7 @@ export default function Html() {
             <Heading
               heading="Container"
               headingDescription="The container tags are tags that have some data such as text,the
-            image between their opening and closing tags.Th several container
+            image between their opening and closing tags.Several container
             tags in HTML are:"
             />
             <ul className="p-4 md:px-8 lg:px-12">
