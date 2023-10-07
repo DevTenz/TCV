@@ -19,7 +19,7 @@ export default function NavBar() {
     });
   }
   return (
-    <nav className="px-4">
+    <nav className="fixed w-screen px-4  z-40 bg-white">
       <div className="w-100% border-b-2 h-16 flex justify-between px-3 items-center">
         <Link to="/">
           <p className="text-3xl font-extrabold ">TCV</p>
@@ -35,6 +35,8 @@ export default function NavBar() {
           alt="search"
           id="searchicon"
           onClick={searchIcon}
+          height="40"
+          width="40"
         />
       </div>
     </nav>

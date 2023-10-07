@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export default function Home() {
   return (
     <div>
-      <section className="flex flex-col h-[33rem] md:h-[35rem] lg:h-[37rem] justify-center items-center">
+      <section className="flex flex-col h-[35rem] md:h-[39rem] lg:h-[41rem] justify-center items-center">
         <p className="text-5xl md:text-6xl lg:text-8xl font-bold text-center">
           The CheatSheet Vault
         </p>
@@ -16,10 +16,8 @@ export default function Home() {
           <p className="text-xl md:text-2xl lg:text-3xl opacity-75">
             Get Your CheatSheet for
           </p>
-          <div className=" h-[29px] md:h-[42px] bg-slate-400 overflow-hidden text-2xl md:text-3xl lg:text-4xl font-semibold ">
-            <p className="first:animate-show">Javascript</p>
-            <p>React</p>
-            <p>Css</p>
+          <div className="text-2xl md:text-3xl lg:text-4xl font-semibold ">
+            <p>Javascript</p>
           </div>
           <p className="text-xl  md:text-2xl lg:text-3xl  opacity-75">here.</p>
         </div>
@@ -33,7 +31,7 @@ export default function Home() {
       <p className="text-2xl font-medium text-white text-center p-2 bg-[#0F2C59]">
         Languages
       </p>
-      <section>
+      <section className="flex justify-center">
         <div className="grid grid-cols-4 lg:grid-cols-8 lg:gap-6 px-4 py-6 justify-items-center gap-4">
           <Link to="/html">
             <img
